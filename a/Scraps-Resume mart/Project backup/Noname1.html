@@ -1,0 +1,232 @@
+<html>
+<head>
+<script language="javascript">
+function valid()
+{
+var a=document.f.t12.value;
+var b=document.f.t14.value;
+ if(document.f.t1.value=="")
+   {
+    alert("ENTER YOUR FIRST NAME");
+    return false;
+   }
+   if(document.f.t2.value=="")
+   {
+   alert("ENTER LAST NAME");
+   return false;
+   }
+    if(document.f.t5.value=="")
+   {
+   alert("ENTER YOUR COUNTRY");
+   return false;
+   }
+  if(document.f.t6.value=="")
+   {
+   alert("ENTER YOUR STATE");
+   return false;
+   }
+ if(document.f.t7.value=="")
+   {
+   alert("ENTER PERMANENT ADDRESS");
+   return false;
+   }
+ if(document.f.t8.value=="")
+   {
+   alert("ENTER NAME OF BANK");
+   return false;
+   }
+ if(document.f.t9.value=="")
+   {
+   alert("ENTER NAME OF ACCOUNT");
+   return false;
+   }
+ if(document.f.t10.value=="")
+   {
+   alert("ENTER ACCOUNT TYPE");
+   return false;
+   }
+if(document.f.t11.value=="")
+   {
+   alert("ENTER ACCOUNT NUMBER");
+   return false;
+   }
+ if(document.f.t12.value=="")
+   {
+   alert("ENTER EMAIL ID");
+   return false;
+   }
+if(a.indexOf("@")==-1)
+{
+    alert("invalid email");
+    return false;
+}
+if(a.indexOf(".")<2)
+{
+    alert("invalid email");
+    return false;
+}
+if(document.f.t13.value=="")
+   {
+   alert("ENTER PASSWORD");
+   return false;
+   }
+if(document.f.t14.value=="")
+   {
+   alert("ENTER MOBILE NUMBER");
+   return false;
+   }
+if(b.length>10)
+   {
+   alert("ENTER 10 DIGIT NUMBER");
+   return false;
+   }
+if(b.length<10)
+ {
+ alert("ENTER 10 DIGIT NUMBER");
+ return false;
+ }
+if(document.f.t16.value=="")
+   {
+   alert("ENTER YOUR ANSWER");
+   return false;
+   }
+return true;
+}
+</script>
+</head>
+<center>
+<body background="tex1.jpg">
+<table border="1" bgcolor="">
+<tr><td bgcolor="yellow"><i><font color="blue"size="08">REGISTRATION DETAILS</font></i></td></tr>
+<form name="f"action="con1.php"method="POST" onsubmit="return valid();">
+
+<tr><td>Enter your first name:
+<input type="textbox"name="t1"/></tr></td>
+</p>
+<p><tr><td>Enter your last name:
+<input type="textbox"name="t2"/></tr></td>
+</p>                                
+<p><tr><td>Date of birth
+<select name="t3">
+<option>1</optiion>
+<option>2</optiion>
+<option>3</optiion>
+<option>4</optiion>
+<option>5</optiion>
+<option>6</optiion>
+<option>7</optiion>
+<option>8</optiion>
+<option>9</optiion>
+<option>10</optiion>
+<option>11</optiion>
+<option>12</optiion>
+<option>13</optiion>
+<option>14</optiion>
+<option>15</optiion>
+<option>16</optiion>
+<option>17</optiion>
+<option>18</optiion>
+<option>19</optiion>
+<option>20</optiion>
+<option>21</optiion>
+<option>22</optiion>
+<option>23</optiion>
+<option>24</optiion>
+<option>25</optiion>
+<option>26</optiion>
+<option>27</optiion>
+<option>28</optiion>
+<option>29</optiion>
+<option>30</optiion>
+<option>31</optiion>
+</select>
+<select>
+<option>January</optiion>
+<option>February</optiion>
+<option>March</optiion>
+<option>April</optiion>
+<option>May</optiion>
+<option>June</optiion>
+<option>July</optiion>
+<option>August</optiion>
+<option>September</optiion>
+<option>October</optiion>
+<option>November</optiion>
+<option>December</optiion>
+</select>
+<select>
+<option>2010</optiion>
+<option>2009</optiion>
+<option>2008</optiion>
+<option>2007</optiion>
+<option>2006</optiion>
+<option>2005</optiion>
+<option>2004</optiion>
+<option>2003</optiion>
+<option>2002</optiion>
+<option>2001</optiion>
+<option>2000</optiion>
+<option>1999</optiion>
+<option>1998</optiion>
+<option>1997</optiion>
+<option>1996</optiion>
+<option>1995</optiion>
+<option>1994</optiion>
+<option>1993</optiion>
+<option>1992</optiion>
+<option>1991</optiion>
+<option>1990</optiion>
+<option>1989</optiion>
+<option>1988</optiion>
+<option>1987</optiion>
+<option>1986</optiion>
+<option>1985</optiion>
+<option>1984</optiion>
+<option>1983</optiion>
+<option>1982</optiion>
+<option>1981</optiion>
+<option>1980</optiion>
+</select></tr></td>
+<p><tr><td>Gender
+<select name="t4">
+<option>male</option>
+<option>female<option>
+</select></tr></td>
+<p><tr><td>
+Enter your country:
+<input type="textbox"name="t5"/></tr></td>
+</p>
+<p><tr><td>
+Enter your state:
+<input type="textbox"name="t6"/></tr></td>
+</p>
+<p><tr><td>
+Enter your permanenet address:
+<input type="textbox"name="t7"/></tr></td>
+</p>
+<p>
+<p><tr><td>Enter an Email Address : 
+                  <input type="text" name="t12"/></tr></td>
+                </p>
+		<p><tr><td>Enter your desired password:
+<input type="password"name="t13"/></tr></td>
+</p>             		
+                <p><tr><td>Enter a phone number : 
+                  <input type="text" name="t14"/></tr></td>
+                </p>
+<p><tr><td>
+Enter your question<select name="t15"><option>What is your nickname</option>
+<option>Whatis your favourite teachers name</option>
+<option>What is your pet name</option>
+<option>What is your favourite sport</option>
+</select></tr></td><p><tr><td>
+Enter your answer<input type="text" name="t16" /></tr></td>
+</p>
+              <p><tr><td> 
+                  <input type="submit" name="Submit" value="Submit"></tr></td>
+                </p>
+			</table>
+              </form>
+</center>
+</body>
+</html>

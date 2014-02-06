@@ -1,0 +1,41 @@
+<html>
+   <head>
+       <script language="javascript">
+           function xyz(p)
+           {
+             if(p=="one")
+                 {
+                     frm.action="index.jsp";
+                     alert(p);
+                 }
+                  if(p=="two")
+                 {
+                     alert(p);
+                     frm.action="first.jsp";
+                 }
+                  if(p=="three")
+                 {
+                     alert(p);
+                     frm.action="jk.jsp";
+                 }
+           }
+
+
+
+
+              </script>
+
+
+   </head>
+    <body>
+     <form  name="frm">
+     <input type="submit" value="one"  onclick=xyz("one")>
+
+<input type="submit" value="two" onclick=xyz("two")>
+
+<input type="submit" value="three" onclick=xyz("three")>
+     </form>
+
+    </body>
+
+
